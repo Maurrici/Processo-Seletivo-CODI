@@ -1,11 +1,26 @@
-*{
+/* ----- LAYOUT ----- */
+html, body, #home, #qualities{
+    height: 100%;
+    overflow-x: hidden;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+body{
+    background: linear-gradient(60deg,rgba(255, 255, 255, 0.685),  #294c71), url(/img/real_state2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: inherit;
+}
+
+body .text-blue{
+    color: #294c71ec;
+}
+
+/* ------ Menu ------ */
 header .navbar.bg-blue{
-    background: #294c71;
+    background: #294c71e5;
 }
     header .navbar ul.navbar-nav{
         width: 100%;
@@ -13,6 +28,121 @@ header .navbar.bg-blue{
         header .navbar ul.navbar-nav .nav-item.active{
             border-bottom: 3px solid rgba(255, 0, 0, 0.685);
         }
+        header .navbar ul.navbar-nav .nav-item:hover:not(.nav-link.active){
+            border-bottom: 3px solid rgba(255, 0, 0, 0.685);
+        }
             header .navbar ul.navbar-nav .nav-item .nav-link{
                 color: azure;
+            }
+            
+
+/* ----- Capa ------ */
+#home a{
+    text-decoration: none;
+}
+
+    #home .carousel-item{
+        text-align: center;
+        color: azure;
+    }
+        #home .carousel-item h1{
+            font-size: 7rem;
+            color: #294c71;
+            text-shadow: 5px 5px 5px azure;
+        }
+        #home .carousel-item h2{
+            font-size: 5rem;
+        }
+        #home .carousel-item p{
+            margin: 20px auto;
+            width: 60%;
+            font-size: 2rem;
+        }
+        #home .carousel-item p.slogan{
+            margin: 20px auto;
+            width: 75%;
+            font-size: 3rem;
+        }
+        #home .carousel-item p.text-small{
+            font-size: 1.4rem;
+        }
+
+        #home .carousel-item .btn-custom{
+            color: white;
+            border-radius: 500px;
+            -webkit-border-radius: 500px;
+            -moz-border-radius: 500px;
+            text-transform: uppercase;
+            padding: 10px 25px;
+            transition: background 0.4s, color 0,4s;
+        }
+        #home .carousel-item .btn-branco{
+            border: 1px solid white;
+        }
+        #home .carousel-item .btn-branco:hover{
+            background-color: white;
+            color: #294c71;
+        }
+
+/* ----- Main Enterprise ----- */
+h2.h2-end{
+    float: right;
+}
+
+h2.h2{
+    color: #294c71;
+    margin: 40px;
+    font-size: 3rem;
+}
+
+.text-white{
+    color: azure;
+}
+
+main{
+    padding: 30px;
+    background: azure;
+}
+
+    main .enterprise h2{
+        display: inline-block;
+        font-size: 2rem;
+        background: url(/img/fundo-caixa.png);
+        color: #294c71;
+    }
+
+    main .enterprise .picture{
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+    }
+        main .enterprise .picture .img-main{
+            width: 300px;
+            height: 300px;
+            margin: 0px 10px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+    main .enterprise .enterprise-information{
+        padding: 20px;
+    }
+        main .enterprise .enterprise-information .enterprise-details strong{
+            color: #294c71;
+        }
+        main .enterprise .enterprise-information .enterprise-comments{
+            padding: 10px;
+        }
+            main .enterprise .enterprise-information .enterprise-comments h3{
+                color: #294c71;
+                text-align: end;
+                font-size: 3rem;
+            }
+            main .enterprise .enterprise-information .enterprise-comments p{
+                text-align: center;
+                font-size: 1.2rem;
+                color: #294c71;
+            }
+            main .enterprise .enterprise-information .enterprise-comments p.text-small{
+                font-size: 1rem;
             }
