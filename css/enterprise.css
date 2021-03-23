@@ -72,9 +72,9 @@
         flex-direction: column;
     }
         .parallax-box .parallax-text .text-details{
-            margin-bottom: 20%;
+            margin-bottom: 10px;
             text-align: center;
-            font-size: 1.3rem;
+            font-size: 0.9rem;
         }
 
         .parallax-box .parallax-text .text-comments{
