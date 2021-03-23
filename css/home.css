@@ -1,0 +1,284 @@
+/* ----- LAYOUT ----- */
+html, body, #home{
+    height: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(60deg,rgba(255, 255, 255, 0.685),  #294c71), url(/img/real_state2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: inherit;
+}
+
+body .text-blue{
+    color: #294c71ec;
+}
+
+/* ------- Capa ------- */
+#home a{
+    text-decoration: none;
+}
+
+    #home .carousel-item{
+        text-align: center;
+        color: azure;
+    }
+        #home .carousel-item h1{
+            font-size: 7rem;
+            color: #294c71;
+            text-shadow: 5px 5px 5px azure;
+        }
+        #home .carousel-item h2{
+            font-size: 5rem;
+        }
+        #home .carousel-item p{
+            margin: 20px auto;
+            width: 60%;
+            font-size: 2rem;
+        }
+        #home .carousel-item p.slogan{
+            margin: 20px auto;
+            width: 75%;
+            font-size: 3rem;
+        }
+        #home .carousel-item p.text-small{
+            font-size: 1.4rem;
+        }
+
+/* ------- Main Enterprise ------- */
+h2.h2-end{
+    float: right;
+}
+
+h2.h2{
+    color: #294c71;
+    margin: 40px;
+    font-size: 3rem;
+}
+
+.text-white{
+    color: azure;
+}
+
+main{
+    padding: 30px;
+    background: azure;
+}
+
+    main .enterprise h2{
+        display: inline-block;
+        font-size: 2rem;
+        color: #294c71;
+    }
+
+    main .enterprise .picture{
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+    }
+        main .enterprise .picture .img-main{
+            width: 300px;
+            height: 300px;
+            margin: 0px 10px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+    main .enterprise .enterprise-information{
+        padding: 20px;
+    }
+        main .enterprise .enterprise-information .enterprise-details strong{
+            color: #294c71;
+        }
+        main .enterprise .enterprise-information .enterprise-comments{
+            padding: 10px;
+        }
+            main .enterprise .enterprise-information .enterprise-comments h3{
+                color: #294c71;
+                text-align: end;
+                font-size: 3rem;
+            }
+            main .enterprise .enterprise-information .enterprise-comments p{
+                text-align: center;
+                font-size: 1.2rem;
+                color: #294c71;
+            }
+            main .enterprise .enterprise-information .enterprise-comments p.text-small{
+                font-size: 1rem;
+            }
+
+/* ------- Qualities Area ------- */
+#qualities{
+    margin: 60px;
+    height: 100%;
+}
+#qualities .box-quality{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    #qualities .box-quality .quality{
+        width: 200px;
+        height: 250px;
+        margin: 10px 15px;
+        color: azure;
+        border-radius: 10px;
+        background: #5196E0;
+        transition: all 0.8s;
+    }
+        #qualities .box-quality .quality:hover{
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+            background: #294c71e5;
+        }
+        #qualities .box-quality .quality .icon-quality{
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            font-size: 5rem;
+        }
+        #qualities .box-quality .quality .text-quality{
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+/* ------- Questions Area ------- */
+#questions{
+    padding: 20px 20px 80px 20px;
+    background: azure;
+}
+    #questions #accordion{
+        margin: 10px auto;
+        padding: 0px 40px;
+    }
+        #questions #accordion .accordion-item{
+            margin: 5px 0px;
+            padding: 5px 15px;
+            border-radius: 10px;
+            background: #5196E0;
+            color: azure;
+            transition: all 0.5s;
+        }
+        #questions #accordion .accordion-item:hover:not(.active){
+            background: #294c71;
+        }
+            #questions #accordion .accordion-item p{
+                font-size: 1.2rem;
+            }
+            #questions #accordion .accordion-item h3{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 1.8rem;
+                cursor: pointer;
+            }    
+            #questions #accordion .accordion-item:hover h3 i{
+                    color: #5196E0;
+                }
+            #questions #accordion .accordion-item .accordion-text{
+                overflow:hidden;
+                max-height: 200px;
+                transition: max-height 1s ease-in-out;
+            }
+                #questions #accordion .accordion-item .accordion-text.hide {
+                    max-height: 0;
+                    pointer-events: none;
+                  }
+
+@media (max-width: 767px){ /* Small */
+    #home .fa-3x{
+        font-size: 1.5rem;
+    }
+
+    #home .carousel-item h1 {
+        font-size: 3.5rem;
+    }
+
+    #home .carousel-item p.slogan {
+        font-size: 1.5rem;
+    }
+
+    #home .carousel-item h2 {
+        font-size: 2.5rem;
+    }
+
+    #home .carousel-item p {
+        font-size: 1rem;
+    }
+
+    #home .carousel-item p.text-small {
+        font-size: 0.7rem;
+    }
+
+    main {
+        padding: 30px 5px 30px 0px;
+    }
+
+    h2.h2 {
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 0px 0px 30px 0px;
+    }
+
+    h2.h2-end {
+        float: none;
+    }
+
+    main .enterprise h2 {
+        font-size: 1rem;
+        margin-left: 30px;
+    }
+
+    main .enterprise .picture {
+        margin: 0px;
+        padding: 0px;
+        overflow-x: scroll;
+    }
+
+    main .enterprise .picture .img-main {
+        width: 150px;
+        height: 150px;
+        margin: 0px 5px;
+    }
+
+    main .enterprise .picture .img-main:first-child {
+        margin-left: 150px;
+    }
+
+    #qualities {
+        margin: 20px;
+    }
+
+    #qualities .box-quality .quality {
+        width: 100px;
+        height: 125px;
+        margin: 5px 7.5px;
+    }
+
+    #qualities .box-quality .quality .icon-quality {
+        padding: 10px;
+        font-size: 2.5rem;
+    }
+
+    #qualities .box-quality .quality .text-quality {
+        font-size: 0.6rem;
+        font-weight: 200;
+    }
+
+    #questions #accordion .accordion-item h3 {
+        font-size: 0.9rem;
+    }
+
+    #questions #accordion .accordion-item p{
+        font-size: 0.6rem;
+    }
+}
